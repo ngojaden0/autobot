@@ -8,8 +8,8 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
-find_package(autobot_gazebo)
 find_package(gazebo_ros)
+find_package(autobot_gazebo)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -26,7 +26,6 @@ install(
   DIRECTORY
     urdf
     launch
-    meshes
   DESTINATION
     share/${PROJECT_NAME}/
 )
