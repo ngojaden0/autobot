@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<launch>
+    <include file='$(find-pkg-share autobot_description)/launch/publish_urdf.launch.py'/>
+    <include file='$(find-pkg-share autobot_gazebo)/launch/spawn_robot_description.launch.py'/>
+</launch>
