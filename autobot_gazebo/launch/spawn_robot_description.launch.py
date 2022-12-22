@@ -44,6 +44,6 @@ def generate_launch_description():
         [
             spawn_robot,
             tf_lidar_base,
-            DeclareLaunchArgument('rviz', default_value='true', description='Open Rviz')
+            rviz
         ]
     )
