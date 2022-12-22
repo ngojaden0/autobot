@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.000810] (autobot_gazebo) JobQueued: {'identifier': 'autobot_gazebo', 'dependencies': OrderedDict()}
+[0.000855] (autobot_description) JobQueued: {'identifier': 'autobot_description', 'dependencies': OrderedDict([('autobot_gazebo', '/home/jaden/autobot/autobot/install/autobot_gazebo')])}
+[0.000892] (autobot_gazebo) JobStarted: {'identifier': 'autobot_gazebo'}
+[0.012181] (autobot_gazebo) JobProgress: {'identifier': 'autobot_gazebo', 'progress': 'cmake'}
+[0.012429] (autobot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/jaden/autobot/autobot/autobot_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/jaden/autobot/autobot/install/autobot_gazebo'], 'cwd': '/home/jaden/autobot/autobot/build/autobot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jaden'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/116/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/jaden'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/jaden/autobot'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/116/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/116/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2279'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu-xorg.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/jaden/autobot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jaden'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu-xorg.default.path'), ('USERNAME', 'jaden'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/../../share/gazebo-11/models:/usr/share/gazebo-11/../../share/gazebo-11/models::/home/jaden/autobot/autobot/install/autobot_gazebo/share/autobot_gazebo/meshes:/home/jaden/autobot/autobot/install/autobot_gazebo/share/autobot_gazebo/meshes'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jaden-pc:@/tmp/.ICE-unix/2097,unix/jaden-pc:/tmp/.ICE-unix/2097'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e94b1f5f_2247_4e8b_9bdb_b21d33c3f4ce'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b3998d6702.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/116/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/jaden/autobot/install/autobot_description:/home/jaden/autobot/install/autobot_gazebo:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/../../share/gazebo-11:/usr/share/gazebo-11/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jaden/autobot/autobot/build/autobot_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/home/jaden/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jaden/autobot/install/autobot_description:/home/jaden/autobot/install/autobot_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.072605] (autobot_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.099422] (-) TimerEvent: {}
+[0.123553] (autobot_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.129728] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.187484] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.196479] (autobot_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.196702] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.197120] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.199479] (-) TimerEvent: {}
+[0.200248] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.275672] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.295308] (autobot_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.295931] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.297014] (autobot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.299544] (-) TimerEvent: {}
+[0.301839] (autobot_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399645] (-) TimerEvent: {}
+[0.484170] (autobot_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.499729] (-) TimerEvent: {}
+[0.565065] (autobot_gazebo) StdoutLine: {'line': b'-- Found rclpy: 3.3.5 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.566153] (autobot_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.599815] (-) TimerEvent: {}
+[0.613070] (autobot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.618704] (autobot_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.628958] (autobot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.644398] (autobot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.667161] (autobot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.699905] (-) TimerEvent: {}
+[0.743680] (autobot_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.745898] (autobot_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800005] (-) TimerEvent: {}
+[0.838732] (autobot_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.865021] (autobot_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.900092] (-) TimerEvent: {}
+[0.916764] (autobot_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.926191] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.988307] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.988531] (autobot_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.000176] (-) TimerEvent: {}
+[1.052104] (autobot_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.053014] (autobot_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.100262] (-) TimerEvent: {}
+[1.200499] (-) TimerEvent: {}
+[1.238246] (autobot_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.239268] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.252874] (autobot_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.300588] (-) TimerEvent: {}
+[1.332608] (autobot_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.368792] (autobot_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.385296] (autobot_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.400672] (-) TimerEvent: {}
+[1.411610] (autobot_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.425859] (autobot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.429673] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[1.435204] (autobot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.436619] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.437116] (autobot_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.441198] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.449502] (autobot_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.471322] (autobot_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.478047] (autobot_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.488164] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.493688] (autobot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.493816] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.498898] (autobot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.498999] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.500723] (-) TimerEvent: {}
+[1.505620] (autobot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.505767] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.510656] (autobot_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.510787] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.516798] (autobot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.516894] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.521997] (autobot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.600834] (-) TimerEvent: {}
+[1.626048] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[1.627544] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.627934] (autobot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.643841] (autobot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.653931] (autobot_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.659025] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.672726] (autobot_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.700921] (-) TimerEvent: {}
+[1.701726] (autobot_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.707531] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.716700] (autobot_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.740163] (autobot_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.741767] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.742221] (autobot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.760210] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[1.764825] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.774825] (autobot_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.799256] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.800790] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.800974] (-) TimerEvent: {}
+[1.801209] (autobot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.801442] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.802233] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.803493] (autobot_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.815111] (autobot_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[1.815564] (autobot_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.817081] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.817612] (autobot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.817968] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[1.820182] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.820617] (autobot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.882469] (autobot_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.889365] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.899457] (autobot_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.901048] (-) TimerEvent: {}
+[1.925018] (autobot_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.929654] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.939168] (autobot_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.963373] (autobot_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.963814] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.964252] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[1.964698] (autobot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.967445] (autobot_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[1.967874] (autobot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[1.978260] (autobot_gazebo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[2.001143] (-) TimerEvent: {}
+[2.012659] (autobot_gazebo) StdoutLine: {'line': b'-- Found autobot_description: 0.0.0 (/home/jaden/autobot/install/autobot_description/share/autobot_description/cmake)\n'}
+[2.014378] (autobot_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.084857] (autobot_gazebo) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.085033] (autobot_gazebo) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.085125] (autobot_gazebo) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.085455] (autobot_gazebo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.086324] (autobot_gazebo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.087066] (autobot_gazebo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.088466] (autobot_gazebo) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.088540] (autobot_gazebo) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.088981] (autobot_gazebo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.090107] (autobot_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.098904] (autobot_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[2.101122] (autobot_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/jaden/autobot/autobot/build/autobot_gazebo\n'}
+[2.101194] (-) TimerEvent: {}
+[2.119026] (autobot_gazebo) CommandEnded: {'returncode': 0}
+[2.120242] (autobot_gazebo) JobProgress: {'identifier': 'autobot_gazebo', 'progress': 'build'}
+[2.120286] (autobot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jaden/autobot/autobot/build/autobot_gazebo', '--', '-j12', '-l12'], 'cwd': '/home/jaden/autobot/autobot/build/autobot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jaden'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/116/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/jaden'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/jaden/autobot'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/116/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/116/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2279'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu-xorg.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/jaden/autobot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jaden'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu-xorg.default.path'), ('USERNAME', 'jaden'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/../../share/gazebo-11/models:/usr/share/gazebo-11/../../share/gazebo-11/models::/home/jaden/autobot/autobot/install/autobot_gazebo/share/autobot_gazebo/meshes:/home/jaden/autobot/autobot/install/autobot_gazebo/share/autobot_gazebo/meshes'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jaden-pc:@/tmp/.ICE-unix/2097,unix/jaden-pc:/tmp/.ICE-unix/2097'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e94b1f5f_2247_4e8b_9bdb_b21d33c3f4ce'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b3998d6702.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/116/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/jaden/autobot/install/autobot_description:/home/jaden/autobot/install/autobot_gazebo:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11/../../share/gazebo-11:/usr/share/gazebo-11/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jaden/autobot/autobot/build/autobot_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/home/jaden/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jaden/autobot/install/autobot_description:/home/jaden/autobot/install/autobot_gazebo:/opt/ros/humble')]), 'shell': False}
+[2.164045] (autobot_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/encoder_information.dir/src/encoder.cpp.o\x1b[0m\n'}
+[2.201293] (-) TimerEvent: {}
+[2.301528] (-) TimerEvent: {}
+[2.356612] (autobot_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jaden/autobot/autobot/autobot_gazebo/src/encoder.cpp:3:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksensor_msgs/msg/joint_state.hpp: No such file or directory\n'}
+[2.356898] (autobot_gazebo) StderrLine: {'line': b'    3 | #include \x1b[01;31m\x1b[K"sensor_msgs/msg/joint_state.hpp"\x1b[m\x1b[K\n'}
+[2.357060] (autobot_gazebo) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.357206] (autobot_gazebo) StderrLine: {'line': b'compilation terminated.\n'}
+[2.359392] (autobot_gazebo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/encoder_information.dir/build.make:76: CMakeFiles/encoder_information.dir/src/encoder.cpp.o] Error 1\n'}
+[2.359660] (autobot_gazebo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/encoder_information.dir/all] Error 2\n'}
+[2.359918] (autobot_gazebo) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.362017] (autobot_gazebo) CommandEnded: {'returncode': 2}
+[2.395805] (autobot_gazebo) JobEnded: {'identifier': 'autobot_gazebo', 'rc': 2}
+[2.401609] (-) TimerEvent: {}
+[2.406149] (autobot_description) JobSkipped: {'identifier': 'autobot_description'}
+[2.406284] (-) EventReactorShutdown: {}

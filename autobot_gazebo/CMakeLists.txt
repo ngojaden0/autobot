@@ -11,6 +11,7 @@ find_package(rclpy REQUIRED)
 find_package(gazebo_ros)
 find_package(autobot_description)
 find_package(rclcpp)
+find_package(sensor_msgs)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -24,7 +25,7 @@ if(BUILD_TESTING)
 endif()
 
 add_executable(encoder_information src/encoder.cpp)
-ament_target_dependencies(encoder_information rclcpp)
+ament_target_dependencies(encoder_information rclcpp sensor_msgs)
 
 install(
   DIRECTORY

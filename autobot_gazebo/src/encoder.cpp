@@ -13,13 +13,13 @@ class EncoderInformation : public rclcpp::Node
         : Node("encoder_information")
         {
            sub_ = this->create_subscription<sensor_msgs::msg::JointState>(
-           "joint_state", 10, std::bind(&EncoderInformation::topic_callback, this, _1));   
+           "/joint_states", 10, std::bind(&EncoderInformation::topic_callback, this, _1));   
         }
 
     private:
-        void topic_callback(const sensor_msgs::msg::JointState & msg) const
+        void topic_callback(const sensor_msgs::msg::JointState & msg)
         {
-            RCLCPP_INFO(this->get_logger(), "I heard '%s'", msg.data.c_str());
+            RCLCPP_INFO(this->get_logger(), "I heard '%f'", msg.position[0]);
         }
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr sub_;
 };
