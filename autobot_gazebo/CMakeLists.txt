@@ -12,20 +12,27 @@ find_package(gazebo_ros)
 find_package(autobot_description)
 find_package(rclcpp)
 find_package(sensor_msgs)
+find_package(tf2)
+find_package(tf2_ros)
+find_package(geometry_msgs)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
 
 add_executable(encoder_information src/encoder.cpp)
-ament_target_dependencies(encoder_information rclcpp sensor_msgs)
+ament_target_dependencies(
+  encoder_information 
+  rclcpp 
+  sensor_msgs
+  tf2
+  tf2_ros
+  geometry_msgs
+  autobot_description
+)
 
 install(
   DIRECTORY
@@ -35,10 +42,12 @@ install(
   DESTINATION
     share/${PROJECT_NAME}/
 )
+
 install(
   TARGETS
     encoder_information 
   DESTINATION 
     lib/${PROJECT_NAME}
 )
+
 ament_package()

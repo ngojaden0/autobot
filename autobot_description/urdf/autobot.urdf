@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<robot name="autobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:include filename="/home/jaden/autobot/install/autobot_description/urdf/autobot.xacro"/>
+<robot name="autobot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find autobot_description)/urdf/yes.xacro"/>
   <link
     name="base_link">
     <inertial>
@@ -318,7 +318,8 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  <gazebo>
+
+ <gazebo>
       <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_diff_drive.so">
           <!-- Update rate -->
           <update_rate>50</update_rate>
@@ -412,4 +413,7 @@
         </plugin>
       </sensor>
   </gazebo>
+
 </robot>
+<!-- IMU Model Plugin-->
+

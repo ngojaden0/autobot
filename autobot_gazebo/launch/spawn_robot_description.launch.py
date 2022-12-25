@@ -8,11 +8,14 @@ from launch.actions import DeclareLaunchArgument
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_prefix
+from launch.conditions import IfCondition
+from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
     position = [0.0, 0.0, 0.055]
     orientation = [0.0, 0.0, 0.0]
     robot_base_name = 'autobot'
+    pkg_autobot_description = get_package_share_directory('autobot_description')
 
     entity_name = robot_base_name+str(int(random.random()*1000))
 
@@ -37,13 +40,21 @@ def generate_launch_description():
 
     rviz = Node(
         package='rviz2',
-        executable='rviz2'
+        executable='rviz2',
+        arguments=['-d', os.path.join(pkg_autobot_description, 'rviz', 'autobot.rviz')],
+    )
+
+    encoder_information = Node(
+        package="autobot_gazebo",
+        executable="encoder_information",
+        name="encoder_information"
     )
 
     return LaunchDescription(
         [
             spawn_robot,
             tf_lidar_base,
-            rviz
+            rviz,
+            encoder_information
         ]
     )
