@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot name="autobot" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find autobot_description)/urdf/yes.xacro"/>
+
+<!--Base Link-->
   <link
     name="base_link">
     <inertial>
@@ -41,6 +42,8 @@
       </geometry>
     </collision>
   </link>
+
+<!--Left Back Link-->
   <link
     name="left_back_link">
     <inertial>
@@ -81,6 +84,8 @@
       </geometry>
     </collision>
   </link>
+
+<!--Left Back Joint-->
   <joint
     name="left_back_joint"
     type="continuous">
@@ -97,6 +102,8 @@
       damping="0.01"
       friction="0.01" />
   </joint>
+
+<!--Right Back Link-->
   <link
     name="right_back_link">
     <inertial>
@@ -137,6 +144,8 @@
       </geometry>
     </collision>
   </link>
+
+<!--Right Back Joint-->>
   <joint
     name="right_back_joint"
     type="continuous">
@@ -153,6 +162,8 @@
       damping="0.01"
       friction="0.01" />
   </joint>
+
+<!--Left Front Link-->
   <link
     name="left_front_link">
     <inertial>
@@ -193,6 +204,8 @@
       </geometry>
     </collision>
   </link>
+
+<!--Left Front Joint-->>
   <joint
     name="left_front_joint"
     type="continuous">
@@ -209,6 +222,8 @@
       damping="0.01"
       friction="0.01" />
   </joint>
+
+<!--Right Front Link-->
   <link
     name="right_front_link">
     <inertial>
@@ -249,6 +264,8 @@
       </geometry>
     </collision>
   </link>
+
+<!--Right Front Joint-->
   <joint
     name="right_front_joint"
     type="continuous">
@@ -265,6 +282,8 @@
       damping="0.01"
       friction="0.01" />
   </joint>
+
+<!--Lidar Link-->
   <link
     name="lidar_link">
     <inertial>
@@ -305,6 +324,8 @@
       </geometry>
     </collision>
   </link>
+
+<!--Lidar Joint-->
   <joint
     name="lidar_joint"
     type="fixed">
@@ -319,65 +340,80 @@
       xyz="0 0 0" />
   </joint>
 
+<!--IMU Link-->
+  <link name="imu_link">
+    <visual>
+      <geometry>
+        <box size="0.025 0.025 0.0025"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.025 0.025 0.0025"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1e-5" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+<!--IMU Joint-->
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="0.075 0 0.1025"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!--Gazebo-->
  <gazebo>
-      <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_diff_drive.so">
-          <!-- Update rate -->
-          <update_rate>50</update_rate>
-          <!-- Number of wheel pairs -->
-          <num_wheel_pairs>2</num_wheel_pairs>
-          <!-- wheels0 -->
-          <left_joint>left_back_joint</left_joint>
-          <right_joint>right_back_joint</right_joint>
-          <!-- wheels1-->
-          <left_joint>left_front_joint</left_joint>
-          <right_joint>right_front_joint</right_joint>
-          <!-- kinematics -->
-          <wheel_separation>0.21532</wheel_separation>
-          <wheel_separation>0.21532</wheel_separation>
-          <wheel_diameter>0.06985</wheel_diameter>
-          <wheel_diameter>0.06985</wheel_diameter>
-          <!-- limits -->
-          <max_wheel_torque>20</max_wheel_torque>
-          <!-- output -->
-          <publish_odom>true</publish_odom>
-          <publish_odom_tf>true</publish_odom_tf>
-          <publish_wheel_tf>true</publish_wheel_tf>
-          <odometry_frame>odom</odometry_frame>
-          <publishWheelJointState>true</publishWheelJointState>
-          <robot_base_frame>base_link</robot_base_frame>
-          <command_topic>cmd_vel</command_topic>
-      </plugin>
-  </gazebo>
-
-<gazebo>
-    <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
-           <joint_name>left_back_joint</joint_name>
-           <joint_name>right_back_joint</joint_name>
-           <joint_name>left_front_joint</joint_name>
-           <joint_name>right_front_joint</joint_name>
-           <update_rate>100.0</update_rate>
-           <always_on>true</always_on>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_diff_drive.so">
+        <!-- Update rate -->
+        <update_rate>50</update_rate>
+        <!-- Number of wheel pairs -->
+        <num_wheel_pairs>2</num_wheel_pairs>
+        <!-- wheels0 -->
+        <left_joint>left_back_joint</left_joint>
+        <right_joint>right_back_joint</right_joint>
+        <!-- wheels1-->
+        <left_joint>left_front_joint</left_joint>
+        <right_joint>right_front_joint</right_joint>
+        <!-- kinematics -->
+        <wheel_separation>0.21532</wheel_separation>
+        <wheel_separation>0.21532</wheel_separation>
+        <wheel_diameter>0.06985</wheel_diameter>
+        <wheel_diameter>0.06985</wheel_diameter>
+        <!-- limits -->
+        <max_wheel_torque>20</max_wheel_torque>
+        <!-- output -->
+        <publish_odom>true</publish_odom>
+        <publish_odom_tf>true</publish_odom_tf>
+        <publish_wheel_tf>true</publish_wheel_tf>
+        <odometry_frame>odom</odometry_frame>
+        <publishWheelJointState>true</publishWheelJointState>
+        <robot_base_frame>base_link</robot_base_frame>
+        <command_topic>cmd_vel</command_topic>
     </plugin>
-</gazebo>
-
-  <gazebo reference="base_link">
-      <material>Gazebo/White</material>
   </gazebo>
 
-  <gazebo reference="left_back_link">
-      <material>Gazebo/Grey</material>
-  </gazebo>
-
-  <gazebo reference="left_front_link">
-      <material>Gazebo/Grey</material>
-  </gazebo>
-
-  <gazebo reference="right_back_link">
-      <material>Gazebo/Grey</material>
-  </gazebo>
-
-  <gazebo reference="right_front_link">
-      <material>Gazebo/Grey</material>
+  <gazebo>
+      <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+          <joint_name>left_back_joint</joint_name>
+          <joint_name>right_back_joint</joint_name>
+          <joint_name>left_front_joint</joint_name>
+          <joint_name>right_front_joint</joint_name>
+          <update_rate>100.0</update_rate>
+          <always_on>true</always_on>
+      </plugin>
   </gazebo>
 
   <gazebo reference="lidar_link">
@@ -414,6 +450,82 @@
       </sensor>
   </gazebo>
 
-</robot>
-<!-- IMU Model Plugin-->
+  <gazebo reference="imu_link">
+      <sensor name="br_imu" type="imu">
+          <always_on>true</always_on>
+          <update_rate>100</update_rate>
+          <imu>
+            <angular_velocity>
+              <x>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>2e-4</stddev>
+                </noise>
+              </x>
+              <y>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>2e-4</stddev>
+                </noise>
+              </y>
+              <z>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>2e-4</stddev>
+                </noise>
+              </z>
+            </angular_velocity>
+            <linear_acceleration>
+              <x>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>1.7e-2</stddev>
+                </noise>
+              </x>
+              <y>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>1.7e-2</stddev>
+                </noise>
+              </y>
+              <z>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>1.7e-2</stddev>
+                </noise>
+              </z>
+            </linear_acceleration>
+          </imu>
+          <plugin name="bytes_imu" filename="libgazebo_ros_imu_sensor.so">
+            <ros>
+                <namespace>imu</namespace>
+                <remapping>~/out:=data</remapping>
+            </ros>
+            <initial_orientation_as_reference>false</initial_orientation_as_reference>
+            <topic_name>imu</topic_name>
+          </plugin>
+      </sensor>
+      <material>Gazebo/Black</material>
+  </gazebo>
 
+  <gazebo reference="base_link">
+      <material>Gazebo/White</material>
+  </gazebo>
+
+  <gazebo reference="left_back_link">
+      <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="left_front_link">
+      <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="right_back_link">
+      <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="right_front_link">
+      <material>Gazebo/Grey</material>
+  </gazebo>
+
+</robot>
