@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//urdf/autobot.urdf
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//urdf/plugins.xacro
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//launch/publish_urdf.launch.py
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//rviz/autobot.rviz
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/lib/autobot_description/rviz/autobot.rviz
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/lib/autobot_description/urdf/autobot.urdf
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/lib/autobot_description/urdf/plugins.xacro
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/ament_index/resource_index/package_run_dependencies/autobot_description
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/ament_index/resource_index/parent_prefix_path/autobot_description
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/path.sh
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/path.dsv
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.bash
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.sh
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.zsh
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.dsv
+-- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/package.dsv
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/ament_index/resource_index/packages/autobot_description
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/cmake/autobot_descriptionConfig.cmake
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/cmake/autobot_descriptionConfig-version.cmake
+-- Up-to-date symlink: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/package.xml

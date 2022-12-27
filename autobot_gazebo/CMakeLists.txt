@@ -15,6 +15,7 @@ find_package(sensor_msgs)
 find_package(tf2)
 find_package(tf2_ros)
 find_package(geometry_msgs)
+find_package(xacro)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

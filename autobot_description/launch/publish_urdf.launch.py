@@ -18,7 +18,7 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher_node',
-        parameters=[{'use sim time': True, 'robot_description': robot_desc}],
+        parameters=[{'use sim time': True, 'robot_description': Command(['xacro ', robot_desc_path])}],
         output='screen'
     )
 

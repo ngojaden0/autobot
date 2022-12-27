@@ -1,0 +1,108 @@
+[0.015s] Invoking command in '/home/jaden/autobot/autobot/build/autobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jaden/autobot/autobot/autobot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jaden/autobot/autobot/install/autobot_description
+[0.041s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.183s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.190s] -- Found rclpy: 3.3.5 (/opt/ros/humble/share/rclpy/cmake)
+[0.190s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.231s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.233s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.240s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.253s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.273s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.346s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.347s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.477s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.695s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.724s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.726s] -- Looking for ignition-math6 -- found version 6.13.0
+[0.731s] -- Searching for dependencies of ignition-math6
+[0.732s] -- Looking for OGRE...
+[0.738s] -- Found Ogre Ghadamon (1.9.0)
+[0.738s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.748s] -- Looking for OGRE_Paging...
+[0.748s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.748s] -- Looking for OGRE_Terrain...
+[0.749s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.749s] -- Looking for OGRE_Property...
+[0.749s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.749s] -- Looking for OGRE_RTShaderSystem...
+[0.749s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.749s] -- Looking for OGRE_Volume...
+[0.749s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.749s] -- Looking for OGRE_Overlay...
+[0.749s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.869s] -- Looking for ignition-math6 -- found version 6.13.0
+[0.869s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.870s] -- Searching for dependencies of ignition-transport8
+[0.890s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.900s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.905s] -- Checking for module 'libzmq >= 4'
+[0.922s] --   Found libzmq , version 4.3.4
+[0.953s] -- Checking for module 'uuid'
+[0.963s] --   Found uuid, version 2.37.2
+[0.985s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.986s] -- Searching for dependencies of ignition-msgs5
+[1.003s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.008s] -- Checking for module 'tinyxml2'
+[1.020s] --   Found tinyxml2, version 9.0.0
+[1.044s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.045s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.045s] -- Searching for dependencies of ignition-common3
+[1.045s] -- Looking for dlfcn.h - found
+[1.045s] -- Looking for libdl - found
+[1.056s] -- Searching for <ignition-common3> component [graphics]
+[1.056s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.057s] -- Searching for dependencies of ignition-common3-graphics
+[1.057s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.058s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.058s] -- Searching for dependencies of ignition-fuel_tools4
+[1.094s] -- Checking for module 'jsoncpp'
+[1.105s] --   Found jsoncpp, version 1.9.5
+[1.135s] -- Checking for module 'libzip'
+[1.145s] --   Found libzip, version 1.7.3
+[1.168s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.168s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.168s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.170s] -- Gazebo version: 11.10
+[1.180s] -- Found autobot_gazebo: 0.0.0 (/home/jaden/autobot/install/autobot_gazebo/share/autobot_gazebo/cmake)
+[1.180s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.260s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.260s] -- Configured cppcheck include dirs: 
+[1.260s] -- Configured cppcheck exclude dirs and/or files: 
+[1.261s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.263s] -- Added test 'lint_cmake' to check CMake code style
+[1.265s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.274s] -- Added test 'uncrustify' to check C / C++ code style
+[1.274s] -- Configured uncrustify additional arguments: 
+[1.275s] -- Added test 'xmllint' to check XML markup files
+[1.276s] -- Configuring done
+[1.281s] -- Generating done
+[1.283s] -- Build files have been written to: /home/jaden/autobot/autobot/build/autobot_description
+[1.290s] Invoked command in '/home/jaden/autobot/autobot/build/autobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jaden/autobot/autobot/autobot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jaden/autobot/autobot/install/autobot_description
+[1.293s] Invoking command in '/home/jaden/autobot/autobot/build/autobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jaden/autobot/autobot/build/autobot_description -- -j12 -l12
+[1.347s] Invoked command in '/home/jaden/autobot/autobot/build/autobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jaden/autobot/autobot/build/autobot_description -- -j12 -l12
+[1.371s] Invoking command in '/home/jaden/autobot/autobot/build/autobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jaden/autobot/autobot/build/autobot_description
+[1.383s] -- Install configuration: ""
+[1.384s] -- Execute custom install script
+[1.385s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//urdf/autobot.urdf
+[1.392s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//urdf/plugins.xacro
+[1.399s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//launch/publish_urdf.launch.py
+[1.407s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description//rviz/autobot.rviz
+[1.424s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/lib/autobot_description/rviz/autobot.rviz
+[1.432s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/lib/autobot_description/urdf/autobot.urdf
+[1.439s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/lib/autobot_description/urdf/plugins.xacro
+[1.452s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/ament_index/resource_index/package_run_dependencies/autobot_description
+[1.458s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/ament_index/resource_index/parent_prefix_path/autobot_description
+[1.464s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/ament_prefix_path.sh
+[1.471s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/ament_prefix_path.dsv
+[1.476s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/path.sh
+[1.482s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/environment/path.dsv
+[1.488s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.bash
+[1.495s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.sh
+[1.501s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.zsh
+[1.517s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/local_setup.dsv
+[1.526s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/package.dsv
+[1.533s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/ament_index/resource_index/packages/autobot_description
+[1.547s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/cmake/autobot_descriptionConfig.cmake
+[1.562s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/cmake/autobot_descriptionConfig-version.cmake
+[1.576s] -- Symlinking: /home/jaden/autobot/autobot/install/autobot_description/share/autobot_description/package.xml
+[1.593s] Invoked command in '/home/jaden/autobot/autobot/build/autobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jaden/autobot/autobot/build/autobot_description

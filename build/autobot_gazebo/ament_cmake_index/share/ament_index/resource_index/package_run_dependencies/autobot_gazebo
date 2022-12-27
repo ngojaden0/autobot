@@ -1,1 +1,1 @@
-rclpy;ros2launch;sensor_msgs;geometry_msgs;tf2;tf2_ros;urdf;ament_lint_auto;ament_lint_common
+rclpy;autobot_description;ros2launch;sensor_msgs;geometry_msgs;tf2;tf2_ros;urdf;xacro;ament_lint_auto;ament_lint_common

@@ -79,7 +79,6 @@ class EncoderInformation : public rclcpp::Node //initialization list (inherit No
             t.transform.translation.y = y;
             t.transform.translation.z = 0.0;
 
-            tf2::Quaternion q;
             q.setRPY(0, 0, th);
             t.transform.rotation.x = q.x();
             t.transform.rotation.y = q.y();
@@ -92,6 +91,7 @@ class EncoderInformation : public rclcpp::Node //initialization list (inherit No
         geometry_msgs::msg::TransformStamped t;
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr sub_;
         std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+        tf2::Quaternion q;
         float curr_left_back_pos, curr_right_back_pos, curr_left_front_pos, curr_right_front_pos;
         float prev_left_back_pos = 0, prev_right_back_pos = 0, prev_left_front_pos = 0, prev_right_front_pos = 0;
         float left_back_vel, right_back_vel, left_front_vel, right_front_vel;

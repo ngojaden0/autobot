@@ -309,3 +309,51 @@ endfunction()
 message(STATUS "Execute custom install script")
 
 # begin of custom install code
+
+# install(DIRECTORY "launch" "worlds" "meshes" "DESTINATION" "share/autobot_gazebo/")
+ament_cmake_symlink_install_directory("/home/jaden/autobot/autobot/autobot_gazebo" DIRECTORY "launch" "worlds" "meshes" "DESTINATION" "share/autobot_gazebo/")
+
+# install("TARGETS" "encoder_information" "DESTINATION" "lib/autobot_gazebo")
+include("/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/autobot_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/autobot_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/autobot_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/autobot_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/autobot_gazebo/environment")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/autobot_gazebo/environment")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/autobot_gazebo/environment")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/autobot_gazebo/environment")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/autobot_gazebo/environment")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/autobot_gazebo/environment")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/autobot_gazebo/environment")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/autobot_gazebo/environment")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/autobot_gazebo")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/autobot_gazebo")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/autobot_gazebo")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/autobot_gazebo")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/autobot_gazebo")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/autobot_gazebo")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/autobot_gazebo")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/autobot_gazebo")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/autobot_gazebo")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/autobot_gazebo")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/autobot_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/autobot_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_core/autobot_gazeboConfig.cmake" "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_core/autobot_gazeboConfig-version.cmake" "DESTINATION" "share/autobot_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_core/autobot_gazeboConfig.cmake" "/home/jaden/autobot/autobot/build/autobot_gazebo/ament_cmake_core/autobot_gazeboConfig-version.cmake" "DESTINATION" "share/autobot_gazebo/cmake")
+
+# install(FILES "/home/jaden/autobot/autobot/autobot_gazebo/package.xml" "DESTINATION" "share/autobot_gazebo")
+ament_cmake_symlink_install_files("/home/jaden/autobot/autobot/autobot_gazebo" FILES "/home/jaden/autobot/autobot/autobot_gazebo/package.xml" "DESTINATION" "share/autobot_gazebo")
