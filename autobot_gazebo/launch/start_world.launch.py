@@ -12,16 +12,10 @@ def generate_launch_description():
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     pkg_autobot_gazebo = get_package_share_directory('autobot_gazebo')
 
-    #print(pkg_autobot_gazebo)
-    #print(pkg_gazebo_ros)
-
     description_package_name = "autobot_description"
     install_dir = get_package_prefix(description_package_name)
 
-    #print(install_dir)
-
     gazebo_models_path = os.path.join(pkg_autobot_gazebo, 'meshes')
-    #print(gazebo_models_path)
 
     if 'GAZEBO_MODEL_PATH' in os.environ:
         os.environ['GAZEBO_MODEL_PATH'] = os.environ['GAZEBO_MODEL_PATH']+':'+install_dir+'/share'+':'+gazebo_models_path
@@ -42,10 +36,12 @@ def generate_launch_description():
         )
     )
 
+    print(pkg_autobot_gazebo+"/worlds")
+
     return LaunchDescription([
         DeclareLaunchArgument(
             'world',
-            default_value=[os.path.join(pkg_autobot_gazebo), 'worlds', 'autobot_empty.world'],
+            default_value=[os.path.join(pkg_autobot_gazebo, 'worlds', 'course.world'), ''],
             description='SDF world file'
         ),
         gazebo

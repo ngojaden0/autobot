@@ -10,7 +10,7 @@
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_ros/transform_broadcaster.h"
-#include "autobot_information.hpp"
+#include "autobot_gazebo/autobot_information.hpp"
 
 using std::placeholders::_1;
 

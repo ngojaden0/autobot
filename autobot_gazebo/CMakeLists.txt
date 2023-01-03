@@ -24,6 +24,15 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+SET( COMMON_INC_FILES
+  ../common2/include
+)
+
+include_directories(
+  include
+  ${COMMON_INC_FILES}
+)
+
 add_executable(encoder_information src/encoder.cpp)
 ament_target_dependencies(
   encoder_information 
@@ -51,4 +60,5 @@ install(
     lib/${PROJECT_NAME}
 )
 
+ament_export_include_directories(include)
 ament_package()
