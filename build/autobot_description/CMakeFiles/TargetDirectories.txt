@@ -1,9 +1,0 @@
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/uninstall.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/autobot_description_uninstall.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/test.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/edit_cache.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/rebuild_cache.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/list_install_components.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/install.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/install/local.dir
-/home/jaden/autobot/autobot/build/autobot_description/CMakeFiles/install/strip.dir

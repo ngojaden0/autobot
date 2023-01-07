@@ -1,4 +1,0 @@
-Invoking command in '/home/jaden/autobot/autobot/build/autobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jaden/autobot/autobot/autobot_gazebo -DCMAKE_INSTALL_PREFIX=/home/jaden/autobot/autobot/install/autobot_gazebo
-Invoked command in '/home/jaden/autobot/autobot/build/autobot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jaden/autobot/autobot/autobot_gazebo -DCMAKE_INSTALL_PREFIX=/home/jaden/autobot/autobot/install/autobot_gazebo
-Invoking command in '/home/jaden/autobot/autobot/build/autobot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jaden/autobot/autobot/build/autobot_gazebo -- -j12 -l12
-Invoked command in '/home/jaden/autobot/autobot/build/autobot_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jaden/autobot/autobot/build/autobot_gazebo -- -j12 -l12

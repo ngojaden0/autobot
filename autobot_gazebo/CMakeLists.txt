@@ -48,7 +48,7 @@ install(
   DIRECTORY
     launch
     worlds
-    meshes
+    models
   DESTINATION
     share/${PROJECT_NAME}/
 )
@@ -60,5 +60,5 @@ install(
     lib/${PROJECT_NAME}
 )
 
-ament_export_include_directories(include)
+include_directories(include)
 ament_package()
